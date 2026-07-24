@@ -1,0 +1,20 @@
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# Code Runner temp files
+tempCodeRunnerFile.cpp
+tempCodeRunnerFile.exe
+
+# VS Code internal
+.vscode/
+
+# MinGW / compiler artifacts
+*.a
+*.lib
+
+# OS files
+.DS_Store
+Thumbs.db
