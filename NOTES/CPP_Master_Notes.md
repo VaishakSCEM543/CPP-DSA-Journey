@@ -397,6 +397,38 @@ void change(int arr[]) {
 
 ---
 
+## 📌 Chapter 7 — Pointers & Dynamic Memory
+
+A **pointer** is a variable that stores the memory address of another variable.
+
+### 1. The Symbols (`&` and `*`)
+
+* `&` (Address-of operator): Gives you the memory address where a variable is stored.
+* `*` (Dereference operator): When used on an address, gives you the value stored at that address.
+
+```cpp
+int a = 10;
+int* ptr = &a;  // ptr now holds the address of a
+
+cout << &a;   // Ex: 0x7ffeeb8
+cout << ptr;  // Ex: 0x7ffeeb8
+cout << *ptr; // 10
+```
+
+### 2. Arrays are Pointers in Disguise
+
+In C++, the name of an array is actually a pointer to its first element.
+
+```cpp
+int arr[5] = {10, 20, 30, 40, 50};
+cout << arr;      // Prints memory address of arr[0]
+cout << *arr;     // Prints 10 (which is arr[0])
+cout << *(arr+1); // Prints 20 (which is arr[1])
+```
+This is why `arr[i]` is exactly the same as `*(arr + i)`.
+
+---
+
 ## ⚡ Quick Reference — Never Make These Mistakes
 
 | ❌ Wrong | ✅ Correct | Why |
@@ -419,15 +451,15 @@ PHASE 1 — FUNDAMENTALS (You are here! ✅)
   ✅ cin / cout / getline
   ✅ Variables & Data Types
   ✅ if / else if / else
-  🔄 Switch Case
-  🔄 Loops (for, while, do-while)
-  ⏳ Arrays (1D & 2D)
-  ⏳ Strings
-  ⏳ Functions
+  ✅ Switch Case
+  ✅ Loops (for, while, do-while)
+  ✅ Arrays (1D & 2D)
+  ✅ Strings
+  ✅ Functions
 
 PHASE 2 — INTERMEDIATE
-  ⏳ Pointers & References
-  ⏳ STL — vector, map, set, pair
+  ✅ Pointers & References
+  🔄 STL — vector, map, set, pair
   ⏳ Recursion
 
 PHASE 3 — DSA BEGINS 🚀
