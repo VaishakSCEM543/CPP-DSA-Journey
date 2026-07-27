@@ -68,6 +68,10 @@ I'm learning from structured resources and building this as a reference I can gr
 │   ├── 01_pointers_basics.cpp
 │   └── 02_pointers_and_arrays.cpp
 │
+├── 📂 08_STL/
+│   ├── 01_vector_basics.cpp
+│   └── 02_pair_basics.cpp
+│
 └── 📂 PRACTICE/
     ├── 01_sum_of_two.cpp
     ├── 02_name_greeter.cpp
@@ -98,8 +102,8 @@ I'm learning from structured resources and building this as a reference I can gr
 | Topic | Status |
 |---|:---:|
 | Pointers & References | ✅ Done |
-| STL — vector, map, set | 🔄 Up Next |
-| Recursion | ⏳ Pending |
+| STL — vector, map, set | ✅ Done |
+| Recursion | 🔄 Up Next |
 
 ### Phase 3 — DSA
 | Topic | Status |

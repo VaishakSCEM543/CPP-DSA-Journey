@@ -429,6 +429,30 @@ This is why `arr[i]` is exactly the same as `*(arr + i)`.
 
 ---
 
+## 📌 Chapter 8 — C++ STL (Standard Template Library)
+
+The STL provides pre-built, highly optimized data structures and algorithms. In Competitive Programming, you will almost never build lists or stacks from scratch.
+
+### 1. Vectors (Dynamic Arrays)
+A `vector` is an array that automatically grows when you add elements.
+```cpp
+vector<int> v;
+v.push_back(10);     // Adds 10 to the end
+v.emplace_back(20);  // Adds 20 (slightly faster than push_back)
+cout << v[0];        // Accesses element at index 0
+cout << v.size();    // Returns the number of elements
+```
+
+### 2. Pairs
+A `pair` binds two values together. Very useful when returning two values from a function or storing coordinates/graph edges.
+```cpp
+pair<int, string> p = {1, "Vaishnavi"};
+cout << p.first;     // 1
+cout << p.second;    // "Vaishnavi"
+```
+
+---
+
 ## ⚡ Quick Reference — Never Make These Mistakes
 
 | ❌ Wrong | ✅ Correct | Why |
@@ -459,8 +483,8 @@ PHASE 1 — FUNDAMENTALS (You are here! ✅)
 
 PHASE 2 — INTERMEDIATE
   ✅ Pointers & References
-  🔄 STL — vector, map, set, pair
-  ⏳ Recursion
+  ✅ STL — vector, map, set, pair
+  🔄 Recursion
 
 PHASE 3 — DSA BEGINS 🚀
   ⏳ Sorting Algorithms
