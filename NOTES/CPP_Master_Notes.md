@@ -451,6 +451,26 @@ cout << p.first;     // 1
 cout << p.second;    // "Vaishnavi"
 ```
 
+### 3. Maps (Dictionaries)
+A `map` stores data in Key-Value pairs. `unordered_map` is insanely fast for counting frequencies!
+```cpp
+unordered_map<int, int> freq;
+int arr[] = {1, 2, 2, 3, 1};
+for(int i = 0; i < 5; i++) {
+    freq[arr[i]]++; // Instantly counts occurrences in O(1) time
+}
+cout << freq[2]; // Prints 2 (since '2' appears twice)
+```
+
+### 4. Sets (Unique Elements)
+A `set` stores only unique elements. It automatically ignores duplicates.
+```cpp
+set<int> st;
+st.insert(10);
+st.insert(10); // Ignored
+cout << st.size(); // Prints 1
+```
+
 ---
 
 ## ⚡ Quick Reference — Never Make These Mistakes
